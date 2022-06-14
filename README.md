@@ -1,11 +1,15 @@
 
-# __**Test technique Web**__
+# __**Beeldi Front**__
 
 ## Introduction
+Réaliser une application React bootstrappé  en utilisant une base de données Firebase.
 
-Le but de ce test est de créer une application simple. Cette application doit nous permettre d'évaluer l'état de vos connaisances sur les technologies React, Redux (et Firebase). Aucune limite de temps n'est imposé pour réaliser ce test (dans la limite du raisonable). Il n'y a donc aucune raison de se presser. Favorisez la qualité à la quantité.
+- Cloner le repo git
+- Accéder au dossier 'beeldi_front'
+- Installer tous les packages : npm install
+- Lancer l'application : npm start 
 
-Vous êtes libre d’utiliser les libraries externes de votre choix si nécessaire. À vous également de choisir l'architecture que vous pensez la plus adaptée. Attendez vous à être questionné sur ces choix.
+Le but de ce test est de créer une application simple. Cette application doit nous permettre d'évaluer l'état de vos connaisances sur les technologies React, Redux (et Firebase)
 
 ## Données fournies
 
@@ -32,15 +36,7 @@ Vous êtes libre d’utiliser les libraries externes de votre choix si nécessai
         - recommandation: Préconisation (si défaut),
 - Deux fichiers .csv contenant les données de ces deux tables
 
-## Consignes
-
-L'application devra comporter au moins deux pages, aucun système d'authentification n'est requis.
-L'UI de l'application ne vous est pas imposée, laissez parler votre créativité. Cependant ce n'est pas l'élément principal sur lequel vous serez jugé, privilégiez la qualité du code et la pertinence de vos choix techniques. 
-
-Pour la provenance des données, vous avez la possibiité d'utiliser la base de données Firebase fournie ou de mettre en place un autre système de base de données grâce aux fichiers .csv fournis ou d'utiliser directemment ces fichiers .csv.
 ### Page 1 - Liste des équipements :
-
-Le but de cette page est :
 
 1. Afficher la liste des équipements triés alphabétiquement par leur nom, la cellule comprendra :	
 	- Le nom de l'équipement ;
@@ -53,8 +49,6 @@ Le but de cette page est :
 
 ### Page 2 - Détail d'un équipement : 
 
-Le but de cette page est :
-
 1. Afficher la photo de l'équipement ;
 2. Afficher une section des infos de l'équipement (nom, domaine, etc...) ;
 3. Afficher une section des caractéristiques de l'équipement ;
@@ -64,14 +58,3 @@ Le but de cette page est :
 	- La préconisation si le défaut existe ;
 	- La photo si elle existe.
 
-## Fonctionnalités supplémentaires
-
-Si vous avez le temps et l'envie, vous pouvez développer des fonctionnalités supplémentaires :
-    
-- Permettre la modification des champs (demander l'autorisation pour écrire dans la base de données)
-- Ajouter plus de critères de recherche pour la liste des équipements (marque, niveau, ...)
-- Tout autre fonctionnalité qui peut améliorer l'expérience utilisateur
-
-## Pour finir
-
-Bon courage !!!

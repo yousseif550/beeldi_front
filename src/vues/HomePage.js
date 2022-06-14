@@ -25,12 +25,10 @@ export default class HomePage extends React.Component {
   }
 
   handleSearch = (e) => {
-    console.log(e.target.value);
     let value = e.target.value;
     this.setState({
-      search: e.target.value
-  })
-    console.log('search', value)
+        search: e.target.value
+    })
   }
 
 
@@ -40,15 +38,12 @@ export default class HomePage extends React.Component {
       const state = snapshot.val();
       this.setState({ equipments: [...this.state.equipments, state.Equipments] })
       this.setState({ checkpoints: [...this.state.checkpoints, state.Checkpoints] })
-      // console.log('SS',state)
-
     });
   };
 
 
   render() {
-    // console.log('equipments',this.state.equipments)
-    // console.log('RENDER',Object.entries(this.state.equipments))
+
     let Obj = Object.entries(this.state.equipments)
     return (
 
@@ -64,14 +59,12 @@ export default class HomePage extends React.Component {
               </input>
             {Obj.map((([key, value]) => 
                 Object.entries(value).filter((val) => {
-                  console.log('val',val[1].name)
                   return val[1].name.toLowerCase().includes(this.state.search) || val[1].domain.toLowerCase().includes(this.state.search)
                 }).map((item, id) => {
-                        console.log(item, id)
                     return (
 
                         <div className="p-3">
-                        <Card border="danger" style={{ width: '38rem'}}>
+                        <Card hey= {id }border="danger" style={{ width: '38rem'}}>
                             <Card.Img variant="top" src={item[1].photo} alt="IMG" class="h-75 d-inline-block"/>
                             <Card.Body>
                                 <Card.Title style={{ fontSize: 12,fontWeight: "bold"}}>Equipment : {item[1].name}</Card.Title>
